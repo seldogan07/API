@@ -43,6 +43,13 @@ public class RequestAndResponse {
         System.out.println(response.contentType());
         //Status Line should be HTTP/1.1 200 OK
         System.out.println(response.statusLine());
+        //How to see "Headers" on console
+        System.out.println(response.header("Connection"));
+        //How to see "Headers" on console
+        System.out.println();
+        System.out.println(response.headers());
+        //How to see "Time on console
+        System.out.println(response.time());
     }
 }
 
