@@ -43,6 +43,8 @@ public class Post03 extends JsonPlaceHolderBaseUrl {
         response.prettyPrint();
 
         //Do assertion
+        JsonPlaceHolderPojo actualData = response.as(JsonPlaceHolderPojo.class);//De-Serialization
+        System.out.println("actualData = " + actualData);
 
 
     }

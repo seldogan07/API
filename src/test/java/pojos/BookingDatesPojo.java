@@ -15,7 +15,8 @@ public class BookingDatesPojo {
         this.checkout = checkout;
     }
 
-        //Getters ans Setters
+    //Getters ans Setters
+
 
     public String getCheckin() {
         return checkin;
@@ -33,7 +34,7 @@ public class BookingDatesPojo {
         this.checkout = checkout;
     }
 
-        //toString
+    //toString
 
     @Override
     public String toString() {
