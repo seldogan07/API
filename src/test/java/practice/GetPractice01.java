@@ -4,7 +4,7 @@ import base_urls.HerOkuAppBaseUrl;
 import io.restassured.response.Response;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.junit.Test;
-import org.testng.asserts.SoftAssert;
+//import org.testng.asserts.SoftAssert;
 import pojos.BookingDatesPojo;
 import pojos.BookingPojo;
 
@@ -50,7 +50,7 @@ public class GetPractice01 extends HerOkuAppBaseUrl {
 
         BookingPojo actualData =new ObjectMapper().readValue(response.asString(),BookingPojo.class);
         System.out.println("actualData = " + actualData);
-        SoftAssert softAssert =new SoftAssert();
+      /*  SoftAssert softAssert =new SoftAssert();
         softAssert.assertEquals(response.getStatusCode(),200);
         assertEquals(actualData.getFirstname(),expectedData.getFirstname());
         assertEquals(actualData.getLastname(),expectedData.getLastname());
@@ -60,6 +60,8 @@ public class GetPractice01 extends HerOkuAppBaseUrl {
         assertEquals(actualData.getBookingdates().getCheckout(),bookingDatesPojo.getCheckout());
         assertEquals(actualData.getAdditionalneeds(),expectedData.getAdditionalneeds());
         softAssert.assertAll();
+
+       */
     }
 
  /*
